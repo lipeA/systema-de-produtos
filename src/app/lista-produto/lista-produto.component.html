@@ -1,0 +1,27 @@
+<h2 class="text-center"> Lista de Produtos </h2>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td> {{ produto.id }}</td>
+                <td> {{ produto.nome }}</td>
+                <td> {{ produto.quantidade }}</td>
+                <td>
+                    <button (click) = "alterarProduto(produto.id)" class="btn btn-info"> Alterar</button>
+                    <button (click) = "excluirProduto(produto.id)" class="btn btn-danger" style="margin-left: 10px"> Excluir</button>
+                    <button (click) = "consultarProduto(produto.id)" class="btn btn-success" style="margin-left: 10px"> Detalhes</button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
