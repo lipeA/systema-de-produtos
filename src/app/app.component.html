@@ -1,19 +1,19 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-    <ul class = "navbar-nav">
-        <li class = "nav-item">
-            <a routerLink="lista-produtos" routerLinkActive="active" class="nav-link" >Lista Produtos</a>
-        </li>
-        <li class = "nav-item">
-            <a routerLink="insere-produto" routerLinkActive="active" class="nav-link" >Insere Produto</a>
-        </li>
-    </ul>
+<nav class="navbar">
+    <div class="pag_lista">
+            <a routerLink="lista-produtos" routerLinkActive="active" class="pag_lista_listar" >Lista Produtos</a>
+            <a routerLink="insere-produto" routerLinkActive="active" class="pag_lista_inserir" >Insere Produto</a>
+
+    </div>
 </nav>
 
 <h1 class="text-center"> {{ title }}</h1>
 <router-outlet></router-outlet>
 
-<footer class = "footer">
+<div class="info">
+    <p>Projeto feito em angular e springboot - Coordenador: Heuber Lima</p> 
+</div>
+<footer class = "my-footer">
     <div class = "container">
-        <span>UEG Programação Web - 2021/01</span>
+        <span>FELIPE ASSIS DE JESUS - <a href="https://github.com/lipeA">Perfil do GitHub</a> </span>
     </div>
 </footer>
